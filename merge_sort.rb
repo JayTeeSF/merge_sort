@@ -11,9 +11,6 @@ module Sorter
     puts "still going"
 
     half = list_size/2
-    #pivot = list[rand(list_size)]
-    #list[rand(list_size)] # something like this -- may be quicksort though ;-)
-    #pivot_index = list.index(pivot)
     if 2 == list_size
       beginning = [list[0]]
       ending = [list[1]]
@@ -40,10 +37,6 @@ module Sorter
         b_index += 1
       end
     end
-    #a.each_with_index do |e,i|
-    #  result += (e <= b[i] ? [e, b[i]] : [b[i], e])
-    #end
-    puts "returning: #{result.inspect}"
     result
   end
 
